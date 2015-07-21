@@ -9,7 +9,7 @@ gulp.task('default', ['watch']);
 
 // Less to CSS: Run manually with: "gulp build-css"
 gulp.task('build-css', function() {
-    return gulp.src('less/@(critical|app).less')
+    return gulp.src('less/app.less')
         .pipe(plugins.plumber())
         .pipe(plugins.less())
         .on('error', function (err) {
