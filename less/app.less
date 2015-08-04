@@ -5,9 +5,11 @@
 @article-background: #f0f0f0;
 @article-text-color: rgb(33, 24, 19);
 @body-background-color: rgb(39, 205, 240);
+@button-color: #e42929;
 
 body {
     font-family: Roboto, sans-serif;
+    font-weight: 300;
     margin: 0;
     padding: 0;
     color: #333;
@@ -47,6 +49,17 @@ h1, h2, h3 {
     p {
         font-weight: 300;
         font-size: 1.1em;
+    }
+    button {
+        border: none;
+        background-color: @button-color;
+        font-family: Roboto;
+        font-size: 1.2em;
+        border-radius: 1em;
+        padding: 0.5em 1em;
+        color: #fafafa;
+        font-weight: 300;
+        background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,0));
     }
 }
 
