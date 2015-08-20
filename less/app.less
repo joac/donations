@@ -52,9 +52,11 @@ h1, h2, h3 {
     .button-bar {
         text-align: center;
     }
+    .button + .button,
     button+button {
         margin-left: 1em;
     }
+    .button,
     button {
         border: none;
         background-color: @button-color;
@@ -64,6 +66,7 @@ h1, h2, h3 {
         padding: 0.6em 1.2em;
         color: #fafafa;
         font-weight: 300;
+        text-decoration: none;
         background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,0));
         &:hover {
             background-color: lighten(@button-color, 2%);
