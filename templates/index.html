@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="article">
+  <h1>{% trans %}Necesito tu ayuda{% endtrans %}</h1>
+  <img class="head" src="{{ url_for('static', filename='img/color_corrected_profile.jpg') }}"/>
+  {{ description | safe }}
+</div>
+    <div class="article">
+      <h2>{% trans %}Cómo colaborar{% endtrans %}</h2>
+      <p>
+      {% trans %}Hay dos formas de ayudar: Difundiendo y/o Donando{% endtrans %}
+      </p>
+      <p>
+      {% trans %} El dinero donado será utilizado para: {% endtrans %}
+      <ul>
+        <li>{% trans %}Abogados:{% endtrans %}<i>(28710 ar$)</i></li>
+        <li>{% trans %}Peritos:{% endtrans %} <i>(No confirmado aun)</i></li>
+        <li>{% trans %}Costas (sellos, legalizaciones, etc):{%endtrans%}<i>180 ar$</i></li>
+      </ul>
+      </p>
+      <p class="button-bar">
+      <a class="button" href="https://bitex.la/donate/joac">{% trans %}Donar en Bitcoins{% endtrans%}</a>
+      </p>
+      <p>
+      {% trans %}Mediante transferencia (en Argentina):{% endtrans %}
+      <pre>
+      Sorianello Joaquin CUIT 20-33658288-2
+      Número de Cuenta:
+      Cuenta Corriente 191-042.532141/4 
+      Banco Credicoop
+      CBU:
+      1910042155004253214146
+      </pre>
+      </p>
+    <p>
+    <a href="#donantes">{% trans %}ver lista de donantes{% endtrans %}</a>
+    </p>
+    </div>
+    <div class="article media">
+      <h2>{% trans %}En los medios{% endtrans %}</h2>
+      <h3>{% trans %}Argentina{% endtrans %}</h3>
+      <ul>
+        <li><a href="http://www.telam.com.ar/notas/201506/110512-a-diez-dias-de-los-comicios-portenos-descubren-filtraciones-de-seguridad-en-el-sistema-de-voto-electronico.html" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_0.png') }}" />
+            Telam
+          </a> (Denuncia Inicial)</li>
+        <li>
+          <a href="http://www.lanacion.com.ar/1807647-allanaron-la-casa-de-un-programador-que-detecto-fallas-en-el-sistema-de-voto-electronico" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_1.png') }}" />
+            
+            La Nacion</a></li>
+        <li><a href="http://www.clarin.com/policiales/Voto-electronico-allanaron-domicilio-irregularidades_0_1387661308.html" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_2.png') }}" />
+            
+            Clarin</a></li>
+        <li><a href="http://www.telam.com.ar/notas/201507/111442-allanamiento-voto-electronico.html" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_3.png') }}" />
+            
+            Telam</a></li>
+        <li><a href="http://www.pagina12.com.ar/diario/elpais/1-276405-2015-07-05.html" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_4.png') }}" />
+            Pagina 12</a></li>
+        <li><a href="http://www.lavaca.org/notas/boleta-electronica-oficialismos-y-empresas-una-formula-ganadora/" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_5.png') }}" />
+            Revista La Vaca</a></li>
+        <li><a href="https://youtu.be/u63SjqgDyYk?t=13m22s" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_6.png') }}" />
+            Periodismo Para Todos</a></li>
+        <li><a href="http://pillku.org/article/vulnerabilidades-tecnicas-desinformacion-y-allanam/" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_7.png') }}" />
+            Revista Pillku</a></li>
+        <li><a href="http://radiocut.fm/audiocut/jose-masson-voto-electronico-caba/" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_8.png') }}" />
+            José Masson en FM La Tribu</a></li>
+      </ul>
+      <h3>{% trans %}Internacionales{% endtrans %}</h3>
+      <ul>
+        <li><a href="https://www.eff.org/es/deeplinks/2015/07/buenos-aires-censuro-y-allano-reportaron-falencias-del-voto-electronico" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_9.png') }}" />
+            Electronic Frontier Fundation</a> (Estados Unidos)</li>
+        <li><a href="https://netzpolitik.org/2015/hinweis-auf-sicherheitsluecke-in-argentinischem-wahlsystem-fuehrt-zu-hausdurchsuchung/" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_10.png') }}" />
+            Netzpolitik</a> (Alemania) </li>
+        <li><a href="http://www.spiegel.de/netzwelt/netzpolitik/razzia-nach-hinweis-auf-sicherheitsluecke-in-wahlcomputern-a-1042657.html" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_11.png') }}" />
+            Spiegel Online</a> (Alemania) </li>
+        <li><a href="http://arstechnica.co.uk/tech-policy/2015/07/police-raid-programmer-who-reported-flaw-in-argentinian-e-voting-system/" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_12.png') }}" />
+            Ars Technica</a> (Inglaterra) </li>
+        <li><a href="http://slashdot.org/story/296317" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_13.png') }}" />
+            Slashdot</a></li>
+        <li><a href="http://boingboing.net/2015/07/08/argentine-police-raid-programm.html" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_14.png') }}" />
+            Boing Boing</a></li>
+        <li><a href="https://www.techdirt.com/articles/20150707/06204631571/argentina-rewards-programmer-who-exposed-e-voting-vulnerabilities-with-complimentary-home-police-raid.shtml" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_15.png') }}" />
+            Tech Dirt</a></li>
+        <li><a href="http://www.techworm.net/2015/07/argentinian-programmer-rewarded-with-a-home-raid-for-exposing-e-voting-vulnerabilities.html" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_16.png') }}" />
+            Tech Worm</a></li>
+        <li><a href="http://piratetimes.net/illegal-and-insecure-evoting-carried-out-in-argentina/" target="_blank">
+            <img src="{{ url_for('static', filename='img/thumbs/thumb_17.png') }}" />
+            Pirate Times</a></li>
+      </ul>
+    </div>
+    <div class="article">
+      <h2>{% trans %}Organizaciones{% endtrans %}</h2>
+       <ul>
+        <li><a href="http://opendatacordoba.org/blog/sobre-los-allanamientos-con-motivos-de-las-vulnerabilidades-en-el-sistema-de-voto-electronico/" target="_blank">Open Data Cordoba</a></li>
+        <li><a href="http://www.facttic.org.ar/noticias/sobre-el-voto-electr-nico-en-la-caba" target="_blank">Facttic</a></li>
+        <li><a href="http://www.vialibre.org.ar/2015/07/04/allanamiento-al-domicilio-de-quienes-reportaron-fallas-de-seguridad-en-los-sistemas-de-msa/" target="_blank">Fundación Via Libre</a></li>
+      </ul>
+    </div>
+    <div id="donantes" class="article">
+      <h2>{% trans %}Los que donaron{% endtrans %} </h2>
+      <h3>{% trans %}Efectivo{% endtrans %}</h3>
+        <pre>
+Facundo Batista - $1000
+        </pre>
+        <h3> Bitcoins </h3>
+        <pre>
+{{ btc_donations }}
+        </pre>
+        <p>
+        Total   10.14697752 btc ~ 2356.76 us$ ~ <b>34.000 ar$</b>
+        </p>
+        <h3>{% trans %}Transferencias{% endtrans %}</h3>
+        <pre>
+{{wire_donations}}
+        </pre>
+        <p>
+        {%trans %}Total:{% endtrans %} <b>14994.51 ar$</b>
+        </p>
+      <p>
+      {% trans %}El total acumulado es de aproximadamente{% endtrans %} <b>49994.51 ar$</b>
+      </p>
+      <p>
+      {% trans %}Importante! Esta información no se actualiza automáticamente.{% endtrans %}
+      </p>
+    </div>
+{% endblock content %}

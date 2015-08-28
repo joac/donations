@@ -1,0 +1,118 @@
+@import (reference) 'clearfix';
+/** Colors **/
+
+@article-background: #f0f0f0;
+@article-text-color: rgb(33, 24, 19);
+@body-background-color: rgb(39, 205, 240);
+@button-color: #e42929;
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: @body-background-color linear-gradient(rgba(0, 0, 0, 0.3), transparent) repeat fixed 0% 0%;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1;
+    font-weight: 100;
+}
+
+pre {
+    overflow-x: hidden;
+}
+.article {
+    .clearfix;
+    h1 {
+        font-size: 4em;
+        text-align: center;
+        margin-bottom: .5em;
+    }
+    h2 {
+        font-size: 2em;         
+    }
+    .head {
+        margin: 0 2em 0 0;
+        max-width: 300px;
+        border-radius: 50%;
+        float: left;
+        border: 2px solid white;
+    }
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 800px;
+    background-color: @article-background;
+    color: @article-text-color;
+    border-radius: 1em;
+    box-shadow: 0px 4px 9px 1px rgba(0,0,0,0.4);
+    p {
+        font-weight: 300;
+        font-size: 1.1em;
+    }
+    .button-bar {
+        text-align: center;
+    }
+    .button + .button,
+    button+button {
+        margin-left: 1em;
+    }
+    .button,
+    button {
+        border: none;
+        background-color: @button-color;
+        font-family: Roboto;
+        font-size: 1.2em;
+        border-radius: 1.2em;
+        padding: 0.6em 1.2em;
+        color: #fafafa;
+        font-weight: 300;
+        text-decoration: none;
+        background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,0));
+        &:hover {
+            background-color: lighten(@button-color, 2%);
+        }
+        &:active {
+            background-color: darken(@button-color, 2%);
+        }
+    }
+}
+.media > ul {
+    .clearfix;
+    padding: 0;
+    li {
+        background-color: #d8d8d8;
+        background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,0));
+        box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.2);
+        margin: 0.5em;
+        padding: 1em;
+        max-width: 210px;
+        height: 240px;
+        display: block;
+        float: left;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: #222;
+            font-weight: bold;
+        }
+        img {
+            border: 2px solid #cecece;
+            border-radius: 6px;
+            width: 100%;
+            display: block;
+            margin-bottom: 1em;
+        }
+
+    }
+}
+
+.twitter-tl {
+    text-align: center;
+}
+
+.draft {
+    color: red;
+}
