@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-08-28 12:09-0300\n"
+"POT-Creation-Date: 2015-08-28 13:58-0300\n"
 "PO-Revision-Date: 2015-08-28 11:32-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -16,6 +16,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.0\n"
+
+#: templates/base.html:6 templates/base.html:12
+#, fuzzy
+msgid "Necesito tu ayuda!"
+msgstr "I need your help!"
+
+#: templates/base.html:13
+msgid ""
+"Ayuda a @_joac a costear el juicio iniciado por la empresa proveedora de "
+"voto electrónico en Buenos Aires"
+msgstr "Help @_joac to pay his lawyers after e-vote vulnerability disclose"
 
 #: templates/index.html:4
 msgid "Necesito tu ayuda"
@@ -65,35 +76,35 @@ msgstr "In the Media"
 msgid "Argentina"
 msgstr "Argentina (in spanish)"
 
-#: templates/index.html:53
+#: templates/index.html:76
 msgid "Internacionales"
 msgstr "International"
 
-#: templates/index.html:67
+#: templates/index.html:108
 msgid "Organizaciones"
 msgstr "Supporting ONG's"
 
-#: templates/index.html:75
+#: templates/index.html:116
 msgid "Los que donaron"
 msgstr "Donors"
 
-#: templates/index.html:76
+#: templates/index.html:117
 msgid "Efectivo"
 msgstr "Cash"
 
-#: templates/index.html:134
+#: templates/index.html:128
 msgid "Transferencias"
 msgstr "Wire Transfers"
 
-#: templates/index.html:151
+#: templates/index.html:133
 msgid "Total:"
 msgstr "Total:"
 
-#: templates/index.html:154
+#: templates/index.html:136
 msgid "El total acumulado es de aproximadamente"
 msgstr "Acumulated:"
 
-#: templates/index.html:157
+#: templates/index.html:139
 msgid "Importante! Esta información no se actualiza automáticamente."
 msgstr "Data is not automatically updated after donation is done."
 
