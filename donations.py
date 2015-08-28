@@ -23,6 +23,8 @@ def index_es():
                            description=description,
                            btc_donations=btc_donations,
                            wire_donations=wire_donations,
+                           lang='es_LA',
+                           current_url="https://joac.github.io/donations/",
                           )
 
 @app.route("/en/")
@@ -39,6 +41,8 @@ def index_en():
                            description=description,
                            btc_donations=btc_donations,
                            wire_donations=wire_donations,
+                           lang='en_US',
+                           current_url="https://joac.github.io/donations/en/",
                           )
 
 if __name__ == "__main__":
