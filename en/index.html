@@ -17,7 +17,7 @@
 &lt;p&gt;Since then I&#39;ve been charged with &lt;strong&gt;Informatic Damage&lt;/strong&gt; and I have to find the money to pay lawyers and legal costs.&lt;/p&gt;
 &lt;p&gt;For this reason I need the help of all of you.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;../&#34;&gt;Version en español&lt;/a&gt;&lt;/p&gt;"/>
-    <meta property="og:image" content="../static/img/yo.png"/>
+    <meta property="og:image" content="https://joac.github.io/donations/static/img/yo.png"/>
     
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,100" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="../static/css/app.css" type="text/css"/>
@@ -25,7 +25,25 @@
   </head>
   <body>
   
-<div class="article">
+<script>
+  window.fbAsyncInit = function() {
+      FB.init({
+            appId      : '424623274404653',
+            xfbml      : true,
+            version    : 'v2.4'
+          });
+    };
+
+  (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+ <div class="article">
   <h1>I need your help!</h1>
   <img class="head" src="../static/img/color_corrected_profile.jpg"/>
   <p>I'm Joaquín Sorianello, an Argentinian software developer.</p>
@@ -40,6 +58,9 @@
       <p>
       You can share and donate.
       </p>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="_joac" data-size="large">Tweet</a>
+      <a href="https://twitter.com/_joac" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @_joac</a>
+      <p><div class="fb-like" data-href="https://joac.github.io/donations/en/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></p>
       <p>
       Money will be used for
       <ul>
