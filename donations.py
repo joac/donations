@@ -15,7 +15,15 @@ def index_es():
     refresh()
     with open('sources/descripcion.md') as fh:
         description = markdown.markdown(fh.read())
-    return render_template('index.html', description=description)
+    with open('donations/btc.txt') as fh:
+        btc_donations = fh.read()
+    with open('donations/wire.txt') as fh:
+        wire_donations = fh.read()
+    return render_template('index.html',
+                           description=description,
+                           btc_donations=btc_donations,
+                           wire_donations=wire_donations,
+                          )
 
 @app.route("/en/")
 def index_en():
@@ -23,7 +31,15 @@ def index_en():
     refresh()
     with open('sources/descripcion_en.md') as fh:
         description = markdown.markdown(fh.read())
-    return render_template('index.html', description=description)
+    with open('donations/btc.txt') as fh:
+        btc_donations = fh.read()
+    with open('donations/wire.txt') as fh:
+        wire_donations = fh.read()
+    return render_template('index.html',
+                           description=description,
+                           btc_donations=btc_donations,
+                           wire_donations=wire_donations,
+                          )
 
 if __name__ == "__main__":
     app.run()

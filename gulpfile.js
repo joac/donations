@@ -34,7 +34,7 @@ gulp.task('build-css', function() {
             }
         ))
         .pipe(plugins.cssmin())
-        .pipe(gulp.dest('./build')).on('error', gutil.log)
+        .pipe(gulp.dest('./static/css/')).on('error', gutil.log)
         .pipe(plugins.livereload());
 });
 

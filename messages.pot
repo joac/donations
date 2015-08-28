@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-08-28 11:47-0300\n"
+"POT-Creation-Date: 2015-08-28 12:09-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,5 +55,45 @@ msgstr ""
 
 #: templates/index.html:36
 msgid "ver lista de donantes"
+msgstr ""
+
+#: templates/index.html:40
+msgid "En los medios"
+msgstr ""
+
+#: templates/index.html:41
+msgid "Argentina"
+msgstr ""
+
+#: templates/index.html:53
+msgid "Internacionales"
+msgstr ""
+
+#: templates/index.html:67
+msgid "Organizaciones"
+msgstr ""
+
+#: templates/index.html:75
+msgid "Los que donaron"
+msgstr ""
+
+#: templates/index.html:76
+msgid "Efectivo"
+msgstr ""
+
+#: templates/index.html:134
+msgid "Transferencias"
+msgstr ""
+
+#: templates/index.html:151
+msgid "Total:"
+msgstr ""
+
+#: templates/index.html:154
+msgid "El total acumulado es de aproximadamente"
+msgstr ""
+
+#: templates/index.html:157
+msgid "Importante! Esta información no se actualiza automáticamente."
 msgstr ""
 
