@@ -1,0 +1,26 @@
+<html lang="{%block lang %}es{% endblock %}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Necesito tu ayuda! | @_joac</title>
+    <meta name="keywords" content="donations, e-vote, internet rights, voto electronico, causa judicial"/>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@_joac" />
+    <meta property="og:url" content="http://joac.github.io/donations{% block og_url %}{% endblock %}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Necesito tu ayuda! | @_joac"/>
+    <meta property="og:title" content="Ayuda a @_joac a costear el juicio iniciado por la empresa proveedora de voto electrónico en Buenos Aires"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content="{% block og_image %}{{ url_for('static' ,filename='img/fb_thumb.jpg') }}{% endblock %}"/>
+    {% block extra_og_tags %}{% endblock %}
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,100" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" type="text/css"/>
+    <link id="favicon" rel="icon" type="image/png" href="{{ url_for('static' ,filename='img/favicon.png') }}"/>
+  </head>
+  <body>
+  {% block content %}
+
+  {% endblock content %}
+  </body>
+</html>
