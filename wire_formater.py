@@ -14,6 +14,6 @@ with open(sys.argv[1]) as fh:
         total += importe
         lines.append("{Fecha Origen} | {importe:10} | {Concepto}\n".format(importe=importe, **a))
 
-with open("donations/wire.txt", 'w') as fh:
+with open("donations/wire.txt", 'a') as fh:
     fh.writelines(lines)
     print(total)
